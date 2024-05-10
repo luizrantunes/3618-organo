@@ -34,5 +34,19 @@ describe('AvaliacaoEstrelasComponent', () => {
     expect(component.classificacao).toBe(classificacao);
   });
 
+  it('deveria chamar o onChange quando o método classificar for chamado', () => {
+    const onChangeSpy = jest.spyOn(component, 'onChange');
+    const classificacao = 4;
+    component.classificar(classificacao);
+    expect(onChangeSpy).toHaveBeenCalled();
+  });
+
+  it('deveria chamar o onTouched quando o método classificar for chamado', () => {
+    const onTouchedSpy = jest.spyOn(component, 'onTouched');
+    const classificacao = 4;
+    component.classificar(classificacao);
+    expect(onTouchedSpy).toHaveBeenCalled();
+  });
+
 })
 
