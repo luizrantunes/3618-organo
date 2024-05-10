@@ -57,5 +57,12 @@ describe('AvaliacaoEstrelasComponent', () => {
     expect(component.classificacao).not.toBe(classificacao);
   });
 
+  it('deveria ignorar valores inválidos e atribuir o valor 1 à classificação', () => {
+    const valoresInvalidos = [0, -6, 'abc', undefined];
+    valoresInvalidos.forEach(valorInvalido => {
+      component.writeValue(valorInvalido as any);
+      expect(component.classificacao).toBe(1);
+    })
+  });
 })
 
