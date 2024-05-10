@@ -48,5 +48,14 @@ describe('AvaliacaoEstrelasComponent', () => {
     expect(onTouchedSpy).toHaveBeenCalled();
   });
 
+  it('não deveria atualizar a classificação quando a propriedade readonly for true', () => {
+    const onChangeSpy = jest.spyOn(component, 'onChange');
+    component.readOnly = true;
+    const classificacao = 5;
+    component.classificar(classificacao);
+    expect(onChangeSpy).not.toHaveBeenCalled();
+    expect(component.classificacao).not.toBe(classificacao);
+  });
+
 })
 
