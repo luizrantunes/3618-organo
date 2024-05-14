@@ -1,27 +1,36 @@
 # Organo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+O Organo é um aplicativo organizador de leituras que permite cadastrar livros, incluindo informações como título, autoria, imagem, gênero, data da leitura e classificação.
 
-## Development server
+## 🔨 Funcionalidades do projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+`Cadastro de livros`: Permite adicionar novos livros à lista, inserindo informações como título, autoria, imagem, gênero, data da leitura e classificação.
 
-## Code scaffolding
+`Listagem de livros`: Exibe os livros cadastrados, separados por gênero literário, exibindo a imagem e demais informações.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ✔️ Técnicas e tecnologias utilizadas
 
-## Build
+As técnicas e tecnologias utilizadas pra isso são:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+`Angular`: Framework utilizado para construir a aplicação, na versão 17.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`Jest`: Estrutura de teste utilizada para realizar testes de unidade.
 
-## Running end-to-end tests
+## 📁 Link do Figma
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Você pode [acessar o figma do projeto aqui](https://www.figma.com/file/GYv8FnRc51ZDfGmi2zzaQb/Organo-%7C-Angular?type=design&node-id=134-128&mode=design).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🛠️ Abrir e rodar o projeto
+
+Você vai precisar do NodeJS, versão 18 ou maior.
+Após baixar o projeto, você precisa instalar as dependências utilizando o comando:
+```bash
+npm install
+```
+Depois, para executar o projeto em modo desenvolvimento:
+```bash
+ng serve
+```
+Então, acesse [http://localhost:4200/](url) no seu navegador.
