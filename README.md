@@ -1,3 +1,5 @@
+![Thumbnail](./thumb.png)
+
 # Organo
 
 O Organo é um aplicativo organizador de leituras que permite cadastrar livros, incluindo informações como título, autoria, imagem, gênero, data da leitura e classificação.
