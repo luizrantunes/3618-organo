@@ -1,4 +1,4 @@
-![Thumbnail](./thumb.png)
+
 
 # Organo
 
