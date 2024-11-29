@@ -9,9 +9,6 @@ export class ErroGeneroLiterario extends Error {
     this.name = "ErroGeneroLiterario";
   }
 }
-@Injectable({
-  providedIn: 'root'
-})
 export class LivroService {
 
   public generos: GeneroLiterario[] = [
